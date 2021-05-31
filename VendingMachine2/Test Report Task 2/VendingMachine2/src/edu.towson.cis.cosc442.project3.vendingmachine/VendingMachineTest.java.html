@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>VendingMachineTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">edu.towson.cis.cosc442.project3.vendingmachine (Feb 27, 2021 7:12:52 PM)</a> &gt; <a href="../../index.html" class="el_group">VendingMachine2</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.towson.cis.cosc442.project3.vendingmachine</a> &gt; <span class="el_source">VendingMachineTest.java</span></div><h1>VendingMachineTest.java</h1><pre class="source lang-java linenums">package edu.towson.cis.cosc442.project3.vendingmachine;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;VendingMachineTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link VendingMachine}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 2/27/21, 3:32 PM
+ * @author flute
+ * @version $Revision: 1.0 $
+ */
+<span class="fc" id="L13">public class VendingMachineTest {</span>
+	/**
+	 * Run the VendingMachine() constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test
+	public void testVendingMachine_1()
+		throws Exception {
+
+<span class="fc" id="L25">		VendingMachine result = new VendingMachine();</span>
+
+		// add additional test code here
+<span class="fc" id="L28">		assertNotNull(result);</span>
+<span class="fc" id="L29">		assertEquals(0.0, result.returnChange(), 1.0);</span>
+<span class="fc" id="L30">		assertEquals(0.0, result.getBalance(), 1.0);</span>
+<span class="fc" id="L31">	}</span>
+
+	/**
+	 * Run the VendingMachine() constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test
+	public void testVendingMachine_2()
+		throws Exception {
+
+<span class="fc" id="L44">		VendingMachine result = new VendingMachine();</span>
+
+		// add additional test code here
+<span class="fc" id="L47">		assertNotNull(result);</span>
+<span class="fc" id="L48">		assertEquals(0.0, result.returnChange(), 1.0);</span>
+<span class="fc" id="L49">		assertEquals(0.0, result.getBalance(), 1.0);</span>
+<span class="fc" id="L50">	}</span>
+
+	/**
+	 * Run the void addItem(VendingMachineItem,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test
+	public void testAddItem_1()
+		throws Exception {
+<span class="fc" id="L62">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L63">		fixture.balance = 1.0;</span>
+<span class="fc" id="L64">		VendingMachineItem item = new VendingMachineItem(&quot;&quot;, 1.0);</span>
+<span class="fc" id="L65">		String code = &quot;A&quot;;</span>
+
+<span class="fc" id="L67">		fixture.addItem(item, code);</span>
+
+		// add additional test code here
+<span class="fc" id="L70">	}</span>
+
+	
+
+	/**
+	 * Run the void addItem(VendingMachineItem,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testAddItem_3()
+		throws Exception {
+<span class="fc" id="L84">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L85">		fixture.balance = 1.0;</span>
+<span class="fc" id="L86">		VendingMachineItem item = new VendingMachineItem(&quot;&quot;, 1.0);</span>
+<span class="fc" id="L87">		String code = &quot;&quot;;</span>
+
+<span class="nc" id="L89">		fixture.addItem(item, code);</span>
+
+		// add additional test code here
+<span class="nc" id="L92">	}</span>
+	/**
+	 * Run the void addItem(VendingMachineItem,String) method test.
+	 *
+	 * added to @throws Exception
+	 */
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testAddItem_4()
+		throws Exception {
+<span class="fc" id="L101">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L102">		fixture.balance = 1.0;</span>
+<span class="fc" id="L103">		VendingMachineItem item = new VendingMachineItem(&quot;&quot;, 1.0);</span>
+<span class="fc" id="L104">		String code = &quot;A&quot;;</span>
+
+<span class="fc" id="L106">		fixture.addItem(item, code);</span>
+<span class="nc" id="L107">		fixture.addItem(item, code);</span>
+		
+<span class="nc" id="L109">		assertEquals(&quot;&quot;, 1.0, fixture.getItem(code)); </span>
+<span class="nc" id="L110">	}</span>
+
+	/**
+	 * Run the double getBalance() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test
+	public void testGetBalance_1()
+		throws Exception {
+<span class="fc" id="L122">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L123">		fixture.balance = 1.0;</span>
+
+<span class="fc" id="L125">		double result = fixture.getBalance();</span>
+
+		// add additional test code here
+<span class="fc" id="L128">		assertEquals(1.0, result, 0.1);</span>
+<span class="fc" id="L129">	}</span>
+
+	/**
+	 * Run the VendingMachineItem getItem(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test
+	public void testGetItem_1()
+		throws Exception {
+<span class="fc" id="L141">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L142">		fixture.balance = 1.0;</span>
+<span class="fc" id="L143">		String code = &quot;A&quot;;</span>
+
+<span class="fc" id="L145">		VendingMachineItem result = fixture.getItem(code);</span>
+
+		// add additional test code here
+<span class="fc" id="L148">		assertEquals(null, result);</span>
+<span class="fc" id="L149">	}</span>
+	/**
+	 * Run the VendingMachineItem getItem(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testGetItem_2()
+		throws Exception {
+<span class="fc" id="L160">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L161">		fixture.balance = 1.0;</span>
+<span class="fc" id="L162">		String code = &quot;&quot;;</span>
+
+<span class="nc" id="L164">		VendingMachineItem result = fixture.getItem(code);</span>
+
+		// add additional test code here
+<span class="nc" id="L167">		assertNotNull(result);</span>
+<span class="nc" id="L168">	}</span>
+	/**
+	 * Run the VendingMachineItem getItem(String) method test.
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testGetItem_3()
+		throws Exception {
+<span class="fc" id="L177">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L178">		fixture.balance = 1.0;</span>
+<span class="fc" id="L179">		String code = &quot;B&quot;;</span>
+
+<span class="fc" id="L181">		VendingMachineItem result = fixture.getItem(code);</span>
+
+		// add additional test code here
+<span class="fc" id="L184">		assertEquals(null, result);</span>
+<span class="fc" id="L185">	}</span>
+	/**
+	 * Run the VendingMachineItem getItem(String) method test.
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testGetItem_4()
+		throws Exception {
+<span class="fc" id="L194">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L195">		fixture.balance = 1.0;</span>
+<span class="fc" id="L196">		String code = &quot;C&quot;;</span>
+
+<span class="fc" id="L198">		VendingMachineItem result = fixture.getItem(code);</span>
+
+		// add additional test code here
+<span class="fc" id="L201">		assertEquals(null, result);</span>
+<span class="fc" id="L202">	}</span>
+	/**
+	 * Run the VendingMachineItem getItem(String) method test.
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testGetItem_5()
+		throws Exception {
+<span class="fc" id="L211">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L212">		fixture.balance = 1.0;</span>
+<span class="fc" id="L213">		String code = &quot;D&quot;;</span>
+
+<span class="fc" id="L215">		VendingMachineItem result = fixture.getItem(code);</span>
+
+		// add additional test code here
+<span class="fc" id="L218">		assertEquals(null, result);</span>
+<span class="fc" id="L219">	}</span>
+
+	/**
+	 * Run the void insertMoney(double) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test
+	public void testInsertMoney_1()
+		throws Exception {
+<span class="fc" id="L231">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L232">		fixture.balance = 1.0;</span>
+<span class="fc" id="L233">		double amount = 1.0;</span>
+
+<span class="fc" id="L235">		fixture.insertMoney(amount);</span>
+
+		// add additional test code here
+<span class="fc" id="L238">	}</span>
+
+	/**
+	 * Run the void insertMoney(double) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testInsertMoney_2()
+		throws Exception {
+<span class="fc" id="L250">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L251">		fixture.balance = 1.0;</span>
+<span class="fc" id="L252">		double amount = -4.9E-324;</span>
+
+<span class="nc" id="L254">		fixture.insertMoney(amount);</span>
+
+		// add additional test code here
+<span class="nc" id="L257">	}</span>
+
+	/**
+	 * Run the boolean makePurchase(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test
+	public void testMakePurchase_1()
+		throws Exception {
+<span class="fc" id="L269">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L270">		fixture.balance = Double.MAX_VALUE;</span>
+<span class="fc" id="L271">		String code = &quot;A&quot;;</span>
+
+<span class="fc" id="L273">		boolean result = fixture.makePurchase(code);</span>
+
+		// add additional test code here
+<span class="fc" id="L276">		assertEquals(false, result);</span>
+<span class="fc" id="L277">	}</span>
+
+	/**
+	 * Run the boolean makePurchase(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test
+	public void testMakePurchase_2()
+		throws Exception {
+<span class="fc" id="L289">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L290">		fixture.balance = 1.0;</span>
+<span class="fc" id="L291">		String code = &quot;A&quot;;</span>
+
+<span class="fc" id="L293">		boolean result = fixture.makePurchase(code);</span>
+
+		// add additional test code here
+<span class="fc" id="L296">		assertEquals(false, result);</span>
+<span class="fc" id="L297">	}</span>
+
+	/**
+	 * Run the boolean makePurchase(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testMakePurchase_4()
+		throws Exception {
+<span class="fc" id="L309">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L310">		fixture.balance = 1.0;</span>
+<span class="fc" id="L311">		String code = &quot;&quot;;</span>
+
+<span class="nc" id="L313">		boolean result = fixture.makePurchase(code);</span>
+
+		// add additional test code here
+<span class="nc" id="L316">		assertTrue(result);</span>
+<span class="nc" id="L317">	}</span>
+	/**
+	 * Run the boolean makePurchase(String) method test.
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testMakePurchase_5()
+		throws Exception {
+<span class="fc" id="L326">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L327">		fixture.balance = 1.0;</span>
+<span class="fc" id="L328">		String code = &quot;A&quot;;</span>
+<span class="fc" id="L329">		VendingMachineItem item = new VendingMachineItem(&quot;&quot;, 1.00);</span>
+<span class="fc" id="L330">		fixture.addItem(item, code); </span>
+<span class="fc" id="L331">		boolean result = fixture.makePurchase(code);</span>
+
+		// add additional test code here
+<span class="fc" id="L334">		assertTrue(result);</span>
+<span class="fc" id="L335">	}</span>
+	/**
+	 * Run the boolean makePurchase(String) method test.
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testMakePurchase_6(){
+<span class="fc" id="L343">		VendingMachine fixture = new VendingMachine();</span>
+		
+<span class="fc" id="L345">		String code = &quot;A&quot;;</span>
+<span class="fc" id="L346">		VendingMachineItem item = new VendingMachineItem(&quot;candy&quot;, 1.00);</span>
+<span class="fc" id="L347">		fixture.addItem(item, code); </span>
+<span class="fc" id="L348">		fixture.balance = 2.0;</span>
+
+		// add additional test code here
+<span class="fc" id="L351">		assertEquals(fixture.makePurchase(&quot;A&quot;), true);</span>
+<span class="fc" id="L352">	}</span>
+	/**
+	 * Run the boolean makePurchase(String) method test.
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testMakePurchase_7(){
+<span class="fc" id="L360">		VendingMachine fixture = new VendingMachine();</span>
+		
+<span class="fc" id="L362">		String code = &quot;A&quot;;</span>
+<span class="fc" id="L363">		VendingMachineItem item = new VendingMachineItem(&quot;candy&quot;, 1.00);</span>
+<span class="fc" id="L364">		fixture.addItem(item, code); </span>
+<span class="fc" id="L365">		fixture.balance = -2.0;</span>
+
+		// add additional test code here
+<span class="fc" id="L368">		assertEquals(fixture.makePurchase(&quot;A&quot;), false);</span>
+<span class="fc" id="L369">	}</span>
+
+	/**
+	 * Run the VendingMachineItem removeItem(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testRemoveItem_1()
+		throws Exception {
+<span class="fc" id="L381">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L382">		fixture.balance = 1.0;</span>
+<span class="fc" id="L383">		String code = &quot;&quot;;</span>
+
+<span class="nc" id="L385">		VendingMachineItem result = fixture.removeItem(code);</span>
+
+		// add additional test code here
+<span class="nc" id="L388">		assertNotNull(result);</span>
+<span class="nc" id="L389">	}</span>
+
+	/**
+	 * Run the VendingMachineItem removeItem(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testRemoveItem_2()
+		throws Exception {
+<span class="fc" id="L401">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L402">		fixture.balance = 1.0;</span>
+<span class="fc" id="L403">		String code = &quot;A&quot;;</span>
+
+<span class="nc" id="L405">		VendingMachineItem result = fixture.removeItem(code);</span>
+
+		// add additional test code here
+<span class="nc" id="L408">		assertNotNull(result);</span>
+<span class="nc" id="L409">	}</span>
+
+	
+	/**
+	 * Run the VendingMachineItem removeItem(String) method test.
+	 * add to get coverage on the return statement 
+	 */
+	@Test
+	public void testRemoveItem_4(){
+<span class="fc" id="L418">		VendingMachine fixture = new VendingMachine();</span>
+		
+<span class="fc" id="L420">		String code = &quot;A&quot;;</span>
+<span class="fc" id="L421">		VendingMachineItem item = new VendingMachineItem(&quot;candy&quot;, 2.00);</span>
+<span class="fc" id="L422">		fixture.addItem(item, code);</span>
+<span class="fc" id="L423">		VendingMachineItem result = fixture.removeItem(code);</span>
+
+		// add additional test code here
+<span class="fc" id="L426">		assertNotNull(result);</span>
+<span class="fc" id="L427">	}</span>
+
+	/**
+	 * Run the double returnChange() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Test
+	public void testReturnChange_1()
+		throws Exception {
+<span class="fc" id="L439">		VendingMachine fixture = new VendingMachine();</span>
+<span class="fc" id="L440">		fixture.balance = 1.0;</span>
+
+<span class="fc" id="L442">		double result = fixture.returnChange();</span>
+
+		// add additional test code here
+<span class="fc" id="L445">		assertEquals(1.0, result, 0.1);</span>
+<span class="fc" id="L446">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="fc" id="L460">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="fc" id="L474">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 2/27/21, 3:32 PM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L484">		new org.junit.runner.JUnitCore().run(VendingMachineTest.class);</span>
+<span class="nc" id="L485">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span>edu.towson.cis.cosc442.project3.vendingmachine (Feb 27, 2021 7:12:52 PM)</div></body></html>
