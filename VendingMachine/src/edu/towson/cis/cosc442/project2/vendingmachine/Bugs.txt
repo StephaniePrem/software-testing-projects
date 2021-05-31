@@ -1,0 +1,13 @@
+Bugs:
+
+
+VendingMachineItem
+------------------------------------------
+line 27: price should throw an exception if it is <= 0 because nothing would be sold for $0
+
+
+
+VendingMachine
+---------------------------------------------
+getBalance() does not try to throw any exceptions, it only returns whatever number it is given, does not check pre conditions
+insertMoney() should throw an exception if the amount entered is <=0 because $0.00 cannot be entered
