@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>PhpTravels</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SuccessfulUserLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://phptravels.com/demo/<datalist><option>https://phptravels.com/demo/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=exact:http://www.phptravels.net<datalist><option>link=exact:http://www.phptravels.net</option><option>//main[@id='Main']/section/div/div/div[2]/div/div/div[2]/div/div/div/div/a</option><option>xpath=(//a[contains(@href, '//www.phptravels.net')])[2]</option><option>//div[2]/div/div/div/div/a</option><option>css=a.btn.btn-primary.btn-lg.btn-block</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=My Account<datalist><option>link=My Account</option><option>xpath=(//a[@id='dropdownCurrency'])[2]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0);')])[13]</option><option>//li[3]/div/a</option><option>css=div.dropdown.dropdown-login.dropdown-tab &gt; #dropdownCurrency</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/div/div/a</option><option>//a[contains(@href, 'https://www.phptravels.net/login')]</option><option>//li[3]/div/div/div/a</option><option>css=a.dropdown-item.active.tr</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//form[@id='loginfrm']/div[3]/div/label/span<datalist><option>//form[@id='loginfrm']/div[3]/div/label/span</option><option>//label/span</option><option>css=label.pure-material-textfield-outlined.float-none &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=username<datalist><option>name=username</option><option>//input[@name='username']</option><option>//form[@id='loginfrm']/div[3]/div/label/input</option><option>//input</option><option>css=input[name="username"]</option></datalist></td><td>email@email.com</td>
+</tr>
+<tr><td>click</td><td>//form[@id='loginfrm']/div[3]/div[2]/label/span<datalist><option>//form[@id='loginfrm']/div[3]/div[2]/label/span</option><option>//div[2]/label/span</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='loginfrm']/div[3]/div[2]/label/input</option><option>//div[2]/label/input</option><option>css=input[name="password"]</option></datalist></td><td>wordpass</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='loginfrm']/button</option><option>//form/button</option><option>css=button.btn.btn-primary.btn-lg.btn-block.loginbtn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//h3<datalist><option>//h3</option><option>css=h3.text-align-left</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//h3<datalist><option>//h3</option><option>css=h3.text-align-left</option></datalist></td><td>Hi, Fname Lname</td>
+</tr>
+<tr><td>click</td><td>link=Fname<datalist><option>link=Fname</option><option>xpath=(//a[@id='dropdownCurrency'])[2]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0);')])[13]</option><option>//li[3]/div/a</option><option>css=div.dropdown.dropdown-login.dropdown-tab &gt; #dropdownCurrency</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/div/div/a[2]</option><option>//a[contains(@href, 'https://www.phptravels.net/account/logout/')]</option><option>//li[3]/div/div/div/a[2]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">UnsuccessfulUserLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://phptravels.com/demo/<datalist><option>https://phptravels.com/demo/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=exact:http://www.phptravels.net<datalist><option>link=exact:http://www.phptravels.net</option><option>//main[@id='Main']/section/div/div/div[2]/div/div/div[2]/div/div/div/div/a</option><option>xpath=(//a[contains(@href, '//www.phptravels.net')])[2]</option><option>//div[2]/div/div/div/div/a</option><option>css=a.btn.btn-primary.btn-lg.btn-block</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=My Account<datalist><option>link=My Account</option><option>xpath=(//a[@id='dropdownCurrency'])[2]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0);')])[13]</option><option>//li[3]/div/a</option><option>css=div.dropdown.dropdown-login.dropdown-tab &gt; #dropdownCurrency</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/div/div/a</option><option>//a[contains(@href, 'https://www.phptravels.net/login')]</option><option>//li[3]/div/div/div/a</option><option>css=a.dropdown-item.active.tr</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//form[@id='loginfrm']/div[3]/div/label/span<datalist><option>//form[@id='loginfrm']/div[3]/div/label/span</option><option>//label/span</option><option>css=label.pure-material-textfield-outlined.float-none &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=username<datalist><option>name=username</option><option>//input[@name='username']</option><option>//form[@id='loginfrm']/div[3]/div/label/input</option><option>//input</option><option>css=input[name="username"]</option></datalist></td><td>user1@phptravels.com</td>
+</tr>
+<tr><td>click</td><td>//form[@id='loginfrm']/div[3]/div[2]/label/span<datalist><option>//form[@id='loginfrm']/div[3]/div[2]/label/span</option><option>//div[2]/label/span</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='loginfrm']/div[3]/div[2]/label/input</option><option>//div[2]/label/input</option><option>css=input[name="password"]</option></datalist></td><td>demouser1</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='loginfrm']/button</option><option>//form/button</option><option>css=button.btn.btn-primary.btn-lg.btn-block.loginbtn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//form[@id='loginfrm']/div/div<datalist><option>//form[@id='loginfrm']/div/div</option><option>//form/div/div</option><option>css=div.alert.alert-danger</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//form[@id='loginfrm']/div/div<datalist><option>//form[@id='loginfrm']/div/div</option><option>//form/div/div</option><option>css=div.alert.alert-danger</option></datalist></td><td>Invalid Email or Password</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SuccessfulAdminLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://phptravels.com/demo/<datalist><option>https://phptravels.com/demo/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//main[@id='Main']/section/div/div/div[3]/div/div/div[2]/div/div/div/div/a/small<datalist><option>//main[@id='Main']/section/div/div/div[3]/div/div/div[2]/div/div/div/div/a/small</option><option>//div[3]/div/div/div[2]/div/div/div/div/a/small</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td>admin@phptravels.com</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//label[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//label[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>demoadmin</td>
+</tr>
+<tr><td>click</td><td>//span<datalist><option>//span</option><option>css=span.ladda-label</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='content']/div[3]/div/div/div<datalist><option>//div[@id='content']/div[3]/div/div/div</option><option>//div/div[3]/div/div/div</option><option>css=div.sc-fYiAbW.EnZnL</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//h2[@id='mainHeader']/strong<datalist><option>//h2[@id='mainHeader']/strong</option><option>//h2/strong</option><option>css=#mainHeader &gt; strong</option></datalist></td><td>Hi Admin!</td>
+</tr>
+<tr><td>click</td><td>//li[@id='logout']/a/strong<datalist><option>//li[@id='logout']/a/strong</option><option>//li[2]/a/strong</option><option>css=#logout &gt; a &gt; strong</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">UnsuccessfulAdminLogin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://phptravels.com/demo/<datalist><option>https://phptravels.com/demo/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//main[@id='Main']/section/div/div/div[3]/div/div/div[2]/div/div/div/div/a/small<datalist><option>//main[@id='Main']/section/div/div/div[3]/div/div/div[2]/div/div/div/div/a/small</option><option>//div[3]/div/div/div[2]/div/div/div/div/a/small</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td>admin442@phptravels.com</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//label[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//label[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>demoadmin442</td>
+</tr>
+<tr><td>click</td><td>//span<datalist><option>//span</option><option>css=span.ladda-label</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[2]/div<datalist><option>//div[2]/div</option><option>css=div.alert.alert-danger.loading.wow.fadeIn.animated.animated</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[2]/div<datalist><option>//div[2]/div</option><option>css=div.alert.alert-danger.loading.wow.fadeIn.animated.animated</option></datalist></td><td>Invalid Login Credentials</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">UserPasswordChange</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://phptravels.com/demo/<datalist><option>https://phptravels.com/demo/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=exact:http://www.phptravels.net<datalist><option>link=exact:http://www.phptravels.net</option><option>//main[@id='Main']/section/div/div/div[2]/div/div/div[2]/div/div/div/div/a</option><option>xpath=(//a[contains(@href, '//www.phptravels.net')])[2]</option><option>//div[2]/div/div/div/div/a</option><option>css=a.btn.btn-primary.btn-lg.btn-block</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=My Account<datalist><option>link=My Account</option><option>xpath=(//a[@id='dropdownCurrency'])[2]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0);')])[13]</option><option>//li[3]/div/a</option><option>css=div.dropdown.dropdown-login.dropdown-tab &gt; #dropdownCurrency</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/div/div/a</option><option>//a[contains(@href, 'https://www.phptravels.net/login')]</option><option>//li[3]/div/div/div/a</option><option>css=a.dropdown-item.active.tr</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//form[@id='loginfrm']/div[3]/div/label/span<datalist><option>//form[@id='loginfrm']/div[3]/div/label/span</option><option>//label/span</option><option>css=label.pure-material-textfield-outlined.float-none &gt; span</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=username<datalist><option>name=username</option><option>//input[@name='username']</option><option>//form[@id='loginfrm']/div[3]/div/label/input</option><option>//input</option><option>css=input[name="username"]</option></datalist></td><td>email@email.com</td>
+</tr>
+<tr><td>click</td><td>//form[@id='loginfrm']/div[3]/div[2]/label/span<datalist><option>//form[@id='loginfrm']/div[3]/div[2]/label/span</option><option>//div[2]/label/span</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='loginfrm']/div[3]/div[2]/label/input</option><option>//div[2]/label/input</option><option>css=input[name="password"]</option></datalist></td><td>wordpass</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='loginfrm']/button</option><option>//form/button</option><option>css=button.btn.btn-primary.btn-lg.btn-block.loginbtn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=My Profile<datalist><option>link=My Profile</option><option>//a[contains(text(),'My Profile')]</option><option>xpath=(//a[@onclick='mySelectUpdate()'])[2]</option><option>//a[contains(@href, '#profile')]</option><option>//nav/ul/li[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='profilefrm']/div/div/div[2]/div[2]/div/input</option><option>//div[2]/div[2]/div/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//form[@id='profilefrm']/div/div/div[2]/div[2]/div/input</option><option>//div[2]/div[2]/div/input</option><option>css=input[name="password"]</option></datalist></td><td>pAsswOrd2</td>
+</tr>
+<tr><td>click</td><td>name=confirmpassword<datalist><option>name=confirmpassword</option><option>//input[@name='confirmpassword']</option><option>//form[@id='profilefrm']/div/div/div[2]/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=input[name="confirmpassword"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=confirmpassword<datalist><option>name=confirmpassword</option><option>//input[@name='confirmpassword']</option><option>//form[@id='profilefrm']/div/div/div[2]/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=input[name="confirmpassword"]</option></datalist></td><td>pAsswOrd2</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='profilefrm']/div/div/div[7]/div/button</option><option>//div/button</option><option>css=button.btn.btn-block.updateprofile.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//h3<datalist><option>//h3</option><option>css=h3.text-align-left</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//h3<datalist><option>//h3</option><option>css=h3.text-align-left</option></datalist></td><td>Hi, Fname Lname</td>
+</tr>
+<tr><td>click</td><td>link=Fname<datalist><option>link=Fname</option><option>xpath=(//a[@id='dropdownCurrency'])[2]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0);')])[13]</option><option>//li[3]/div/a</option><option>css=div.dropdown.dropdown-login.dropdown-tab &gt; #dropdownCurrency</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//header[@id='//header-waypoint-sticky']/div/div/div/div[2]/div/ul/li[3]/div/div/div/a[2]</option><option>//a[contains(@href, 'https://www.phptravels.net/account/logout/')]</option><option>//li[3]/div/div/div/a[2]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
